@@ -19,14 +19,13 @@ def main():
             factorial = 1
             counter = 1
 
-            # do-while loop simulation
-            if number > 0:
+            # do-while loop simulation with while true
+            while True:
                 factorial = factorial * counter
                 counter = counter + 1
 
-            while counter <= number:
-                factorial = factorial * counter
-                counter = counter + 1
+                if counter > number:
+                    break
 
             print(f"{number}! = {factorial}")
     except ValueError:
